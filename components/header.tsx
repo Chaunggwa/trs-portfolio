@@ -1,9 +1,12 @@
 "use client";
-import React from 'react'
+import React, { useState } from 'react'
 import {motion} from "framer-motion";
 import { links } from '@/lib/data';
 import Link from 'next/link';
 import { SheetDemo } from './sheet';
+import {BiMenuAltLeft} from "react-icons/bi";
+import {AiOutlineClose} from "react-icons/ai"
+import { Button } from './ui/button';
 const Header = () => {
   return (
     <header className='relative max-w-full'>
