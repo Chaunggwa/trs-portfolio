@@ -69,14 +69,14 @@ const Intro = () => {
               type: "tween",
               duration: 0.8
             }}
-            className='flex gap-2'
+            className='flex gap-1 p-2'
             >
               <Button
               variant="outline"
               >
               <Link 
               href="#contact"
-              className={`${poppins.className} flex items-center gap-2`}
+              className={`${poppins.className} flex items-center gap-1`}
               >
                 Contact me
                 <MdOutlineContactSupport className="w-5 h-5" />
@@ -87,7 +87,7 @@ const Intro = () => {
               >
               <a 
               href="/cv.pdf"
-              className={`${poppins.className} flex items-center gap-2`}
+              className={`${poppins.className} flex items-center gap-1`}
               download={true}
               >
                 Download CV
