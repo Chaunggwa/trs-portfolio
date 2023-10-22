@@ -9,7 +9,7 @@ import {AiOutlineClose} from "react-icons/ai"
 import { Button } from './ui/button';
 const Header = () => {
   return (
-    <header className='relative max-w-full'>
+    <header className='relative max-w-full z-[999]'>
         <SheetDemo />
         <motion.div className='hidden sm:block fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full'
         initial={{y: -100,x: "-50%", opacity: 0}}
