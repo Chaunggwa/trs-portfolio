@@ -5,6 +5,7 @@ import {DiGithubBadge} from "react-icons/di"
 import { CgMediaLive } from 'react-icons/cg';
 import {Poppins} from "next/font/google";
 import { useScroll, motion } from 'framer-motion';
+import { root } from 'postcss';
 
 const poppins = Poppins({weight: "400", style: "normal", subsets: ["latin"] })
 
@@ -23,7 +24,7 @@ const ProjectCard = ({
   const ref = useRef(null);
 const { scrollYProgress} = useScroll({
   target: ref,
-  offset: ["start start", "end end"]
+  offset: ["120px", "100px"]
  })
   return (
     <motion.div
@@ -31,6 +32,7 @@ const { scrollYProgress} = useScroll({
       scale: scrollYProgress,
       opacity: scrollYProgress
     }} 
+  
     ref={ref}
     className={`${poppins.className} rounded overflow-hidden shadow-lg max-w-xs`}>
       <Image 
@@ -53,7 +55,7 @@ const { scrollYProgress} = useScroll({
         })}
         
       </div>
-      <div className='flex gap-3 px-6 py-4'>
+      <div className='flex gap-3 md:gap-1 px-6 py-4'>
       <a href={webLink} target='_blank' className="inline-flex gap-1 items-center px-5 py-2.5 text-xs font-medium text-center text-white bg-stone-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-stone-700 dark:focus:ring-blue-800">
         View
         <CgMediaLive />
