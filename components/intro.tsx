@@ -12,7 +12,7 @@ import {DiGithubBadge} from "react-icons/di"
 const poppins = Poppins({weight: "600", style: "normal", subsets: ["latin"] })
 const Intro = () => {
   return (
-    <section>
+    <section id='home'>
         <div className='flex flex-col items-center justify-center'>
           
             <div className='my-6 flex flex-col gap-3'>

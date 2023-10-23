@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Special_Elite } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 
 const inter = Special_Elite({weight: "400", style: "normal", subsets: ["latin"] })
 
@@ -21,7 +22,9 @@ export default function RootLayout({
         
 
         <Header />
-        {children}</body>
+        {children}
+        <Footer />
+        </body>
     </html>
   )
 }
