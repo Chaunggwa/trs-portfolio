@@ -1,5 +1,6 @@
 import {DiHtml5, DiCss3, DiJsBadge, DiReact, DiBootstrap, DiDigitalOcean,DiFirebase, DiGit, DiGithubBadge, DiJqueryLogo, DiLinux, DiMongodb, DiMysql, DiNginx, DiNodejs, DiSass, DiUbuntu } from "react-icons/di"
 import {SiTypescript, SiRedux, SiZod, SiExpress,SiReactquery, SiTailwindcss, SiPrisma} from "react-icons/si";
+import {BiLogoFirebase} from "react-icons/bi"
 import {TbBrandNextjs, TbSql} from "react-icons/tb"
 import ecommerceImg from "@/public/e-commerce.png";
 import dashboard from "@/public/dashboard.png";
@@ -142,7 +143,7 @@ export const skillsData = [
   },
   {
     name: "Firebase",
-    icon: <DiFirebase className="w-10 h-10"/>
+    icon: <BiLogoFirebase className="w-10 h-10"/>
   },
   {
     name: "MySql",

@@ -11,7 +11,7 @@ const ProjectPage = () => {
           return <ProjectCard {...project} key={index}/>
         })}
       </div>
-      <p className='text-center text-lg text-orange-200 dark:text-orange-200'>More projects are coming soon...</p>
+      <p className='text-center text-lg text-gray-900 dark:text-orange-200'>More projects are coming soon...</p>
     </div>
   )
 }

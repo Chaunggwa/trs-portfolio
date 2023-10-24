@@ -22,7 +22,7 @@ const Header = () => {
 
 
         <nav className='fixed hidden w-full sm:flex h-[4.5rem] py-2 sm:h-[3.25rem]'>
-          <ul className='flex w-full flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:gap-5'>
+          <ul className='flex w-full flex-wrap items-center justify-center gap-y-1 text-[0.9rem] dark:text-white font-medium text-gray-500 sm:gap-5'>
             {links.map((link) => (
               <motion.li
               className='h-full flex items-center justify-center' 
@@ -30,7 +30,7 @@ const Header = () => {
               initial={{y: -100, opacity: 0}}
               animate={{y: 0, opacity: 1}}
               >
-                <Link className={`${(path == link.hash ? "text-teal-500 dark:text-teal-500" : "")}  text-xl flex w-full items-center justify-center p-3 hover:text-gray-950 dark:hover:text-teal-400 dark:text-white transition`} href={link.hash}>
+                <Link className={`${(path == link.hash ? "text-teal-500 dark:text-teal-500" : "")}  text-xl flex w-full items-center justify-center p-3 hover:text-gray-950 dark:hover:text-teal-400 transition`} href={link.hash}>
                   {link.name}
                 </Link>
               </motion.li>
