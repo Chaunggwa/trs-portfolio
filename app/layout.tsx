@@ -3,6 +3,7 @@ import { Special_Elite } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
+import { Toaster } from 'react-hot-toast'
 
 const inter = Special_Elite({weight: "400", style: "normal", subsets: ["latin"] })
 
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} w-full overflow-x-hidden bg-stone-100 text-gray-950`}>
         
-
+        <Toaster position="top-right"/>
         <Header />
         {children}
         <Footer />

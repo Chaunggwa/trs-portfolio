@@ -1,6 +1,6 @@
 import {DiHtml5, DiCss3, DiJsBadge, DiReact, DiBootstrap, DiDigitalOcean,DiFirebase, DiGit, DiGithubBadge, DiJqueryLogo, DiLinux, DiMongodb, DiMysql, DiNginx, DiNodejs, DiSass, DiUbuntu } from "react-icons/di"
-import {SiTypescript, SiRedux, SiZod, SiExpress,SiReactquery, SiTailwindcss} from "react-icons/si";
-import {TbBrandNextjs} from "react-icons/tb"
+import {SiTypescript, SiRedux, SiZod, SiExpress,SiReactquery, SiTailwindcss, SiPrisma} from "react-icons/si";
+import {TbBrandNextjs, TbSql} from "react-icons/tb"
 import ecommerceImg from "@/public/e-commerce.png";
 import dashboard from "@/public/dashboard.png";
 import imageSearch from "@/public/imagegen.png";
@@ -147,6 +147,14 @@ export const skillsData = [
   {
     name: "MySql",
     icon: <DiMysql className="w-10 h-10"/>
+  },
+  {
+    name: "Prisma",
+    icon: <SiPrisma className="w-10 h-10" />
+  },
+  {
+    name: "SQL",
+    icon: <TbSql className="w-10 h-10"/>
   },
   {
     name: "Linux",
