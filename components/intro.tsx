@@ -75,7 +75,7 @@ const Intro = () => {
               variant="outline"
               >
               <Link 
-              href="#contact"
+              href="/contact"
               className={`${poppins.className} flex items-center gap-1`}
               >
                 Contact me
