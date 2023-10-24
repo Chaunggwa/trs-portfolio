@@ -45,7 +45,7 @@ const SkillCard = ({
     }}
     className='flex flex-col gap-2 justify-center items-center'>
         {icon}
-        <p className='hover:text-stone-500'>{name}</p>
+        <p className='hover:text-stone-500 dark:hover:text-teal-200'>{name}</p>
     </motion.div>
   )
 }

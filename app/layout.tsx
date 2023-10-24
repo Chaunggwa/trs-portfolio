@@ -4,6 +4,8 @@ import './globals.css'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import { Toaster } from 'react-hot-toast'
+import { ThemeProvider } from "@/components/theme-provider"
+import { ModeToggle } from '@/components/theme-toggler'
 
 const inter = Special_Elite({weight: "400", style: "normal", subsets: ["latin"] })
 
@@ -19,12 +21,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} w-full overflow-x-hidden bg-stone-100 text-gray-950`}>
-        
+      <body className={`${inter.className} w-full overflow-x-hidden bg-stone-100 text-gray-950 dark:text-gray-200 dark:bg-gray-600`}>
+        <ThemeProvider
+        attribute='class'
+        defaultTheme='light'
+        enableSystem
+        disableTransitionOnChange
+        >
+
         <Toaster position="top-right"/>
         <Header />
         {children}
         <Footer />
+        <ModeToggle />
+        </ThemeProvider>
         </body>
     </html>
   )

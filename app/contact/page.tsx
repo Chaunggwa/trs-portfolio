@@ -6,7 +6,7 @@ import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/action/sendEmail";
 import toast from "react-hot-toast";
-
+import {AiOutlineMail, AiOutlinePhone, AiOutlineLinkedin, AiOutlineFacebook} from "react-icons/ai"
 
 export default function Contact() {
  
@@ -28,14 +28,21 @@ export default function Contact() {
         once: true,
       }}
     >
-      <h1 className='text-center capitalize hover:text-gray-600 text-2xl border-b-8 border-b-stone-400'>Contact me</h1>
+      <h1 className='text-center capitalize dark:hover:text-teal-300 hover:text-gray-600 text-2xl border-b-8 border-b-stone-400'>Contact me</h1>
 
-      <p className="text-gray-700  dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:thu.rein.soe.dev@gmail.com">
-          thu.rein.soe.dev@gmail.com
-        </a>{" "}
-        or through this form.
+      <p className="flex flex-col justify-start gap-2">
+        <a className="flex justify-start gap-2 items-center hover:underline" target="_blank" href="mailto:thu.rein.soe.dev@gmail.com">
+          <AiOutlineMail className="w-8 h-8"/> thu.rein.soe.dev@gmail.com
+        </a>
+        <a className="flex justify-start gap-2 items-center hover:underline" target="_blank" href="tel:+959966840935">
+          <AiOutlinePhone className="w-8 h-8"/> +959966840935
+        </a>
+        <a className="flex justify-start gap-2 items-center hover:underline" target="_blank" href="https://www.linkedin.com/in/thu-rein-soe">
+          <AiOutlineLinkedin className="w-8 h-8"/> Thu Rein Soe
+        </a>
+        <a className="flex justify-start gap-2 items-center hover:underline" target="_blank" href="https://www.facebook.com/profile.php?id=100077632190122&mibextid=ZbWKwL">
+          <AiOutlineFacebook className="w-8 h-8"/> Thu Rein Soe
+        </a>
       </p>
 
       <form
@@ -79,7 +86,7 @@ export default function Contact() {
   return (
     <button
       type="submit"
-      className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-md outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
+      className="group dark:bg-sky-400 flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-md outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105  dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
     >
       
           Submit{" "}
